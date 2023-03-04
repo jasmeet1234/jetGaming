@@ -1,0 +1,163 @@
+html {
+  font-size: 62.5%;
+  font-family: "Gloock", serif;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-bar-ele {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background: white;
+  height: 6rem;
+  border: none;
+  flex: 1;
+  margin: 0 1.5rem;
+  border-radius: 1.5rem 1.5rem 0 0%;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 0px 0px rgb(18, 248, 140);
+  border-bottom: 0;
+  transition: all 0.2s;
+}
+.nav-bar-ele:hover {
+  background-color: black;
+  color: white;
+}
+.nav-bar-ele:focus {
+  background-color: black;
+  color: white;
+}
+
+.cart-con {
+  height: 85%;
+  background-color: black;
+  border-radius: 1.5rem;
+  box-shadow: 2px 2px 0px 0px rgb(18, 248, 140);
+  display: flex;
+  flex-direction: column;
+}
+.games-con {
+  display: flex;
+  flex-direction: column;
+}
+.games-ele {
+  display: flex;
+  flex-direction: row;
+
+  align-items: end;
+  justify-content: center;
+  width: 80rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+img {
+  width: 7rem;
+  height: 100%;
+}
+.text {
+  border: 0.1rem solid rgb(82, 76, 76);
+  box-shadow: 2px 2px 0px 0px rgb(18, 248, 140);
+  font-size: 1.5rem;
+  width: 60%;
+  margin-right: 5%;
+  color: white;
+  border-radius: 1.5rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 1rem;
+  margin-bottom: 0.2rem;
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+}
+.text span:last-child {
+  flex: 1;
+  text-align: end;
+}
+.x {
+  color: white;
+}
+svg {
+  width: 3rem;
+}
+
+.money-con {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.money-con-ele {
+  color: white;
+  font-size: 1.75rem;
+  width: 80rem;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.checkout-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: flex-end;
+  flex: 1;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.check-button {
+  flex: 1;
+  width: 80rem;
+  border: 0.1rem solid rgb(82, 76, 76);
+  box-shadow: 2px 2px 0px 0px rgb(18, 248, 140);
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 1.5rem;
+  background-color: black;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+.check-button:hover {
+  transform: translateY(0.2rem);
+  background-color: rgb(48, 47, 47);
+}
+.check-button:active {
+  transform: translateY(0.3rem);
+  background-color: rgb(44, 38, 38);
+}
+
+.check-button:first-child {
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 1000px) {
+  .games-ele {
+    width: 90%;
+  }
+  .money-con-ele {
+    width: 90%;
+  }
+  .check-ele {
+    width: 90%;
+  }
+  .check-button {
+    width: 100%;
+    align-self: center;
+  }
+}
